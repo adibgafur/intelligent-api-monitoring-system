@@ -112,7 +112,7 @@ Example Output: "AppointmentAPI failed with status 500 and returned 0 records. P
           { role: 'user', content: userPrompt },
         ],
         temperature: 0.2,
-        max_tokens: 120,
+        max_tokens: 400,
       },
       { signal: controller.signal }
     );

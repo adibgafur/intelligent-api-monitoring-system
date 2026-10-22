@@ -6,6 +6,8 @@ An automated, full-stack API health monitoring and anomaly detection platform th
 
 ## 1. System Architecture
 
+![System Architecture Pipeline](docs/pipeline.png)
+
 ```
 [ External Telemetry / Sample Data / Poller ]
                      │

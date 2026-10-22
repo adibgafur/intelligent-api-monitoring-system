@@ -24,7 +24,7 @@ export const config = {
   
   // Groq LLM
   groqApiKey: process.env.GROQ_API_KEY || '',
-  groqModel: process.env.GROQ_MODEL || 'llama-3.3-70b-versatile',
+  groqModel: process.env.GROQ_MODEL || 'openai/gpt-oss-20b',
   aiTimeoutMs: getEnvNumber('AI_TIMEOUT_MS', 8000),
   aiConcurrency: getEnvNumber('AI_CONCURRENCY', 3),
   

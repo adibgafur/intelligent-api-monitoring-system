@@ -1,6 +1,10 @@
 import mongoose from 'mongoose';
+import dns from 'dns';
 import { config } from './env.js';
 import { logger } from '../utils/logger.js';
+
+// Ensure SRV DNS resolution succeeds across local ISPs
+dns.setServers(['8.8.8.8', '1.1.1.1']);
 
 export async function connectDB() {
   if (!config.mongoUri || config.mongoUri.includes('<cluster>') || config.mongoUri.includes('<password>')) {
